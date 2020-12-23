@@ -34,7 +34,7 @@ public:
 	void SetNull() { v4Address = 0; }
 	void SetBroadcast() { v4Address = 0xFFFFFFFF; }
 
-#if 0		// these functions are not currently used
+#if 1		// these functions are not currently used
 	uint32_t GetV4BigEndian() const { return __builtin_bswap32(v4Address); }
 	void SetV4BigEndian(uint32_t ip) { v4Address = __builtin_bswap32(ip); }
 #endif
